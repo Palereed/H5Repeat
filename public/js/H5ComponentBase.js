@@ -9,9 +9,10 @@ var H5ComponentBase = function (name, cfg) {
 	cfg.text   && component.text  ( cfg.text );
 	cfg.css    && component.css   ( cfg.css );
 	cfg.bg     && component.css   ('background' , 'url(' + cfg.bg + ')');
+	console.log()
 	if( cfg.center === true ){
 	 	component.css({
-	 	 	marginLeft : ( - cfg.width/2 ) + 'px',
+	 	 	marginLeft : typeof(cfg.width) === 'string' ? ( - parseFloat(cfg.width)/2 ) + 'rem' : -cfg.width/2  + 'px',
 	 	 	left:'50%'
 	 	})
 	 }

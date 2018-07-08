@@ -25,7 +25,7 @@ var H5ComponentRader = function (name, cfg) {
 	    	ctx.lineTo(x,y);
 		}
 		ctx.closePath();
-        ctx.fillStyle = (isBlue = !isBlue) ? '#ff7676' : '#f1f9ff'; // 交替上色
+        ctx.fillStyle = (isBlue = !isBlue) ? '#0fb9ed' : '#f1f9ff'; // 交替上色
         ctx.fill();
      }
 
@@ -66,11 +66,11 @@ var H5ComponentRader = function (name, cfg) {
             ctx.lineTo(x,y);
         }
         ctx.closePath();
-    	ctx.strokeStyle = '#32bbff';
+    	ctx.strokeStyle = '#ff4422';
     	ctx.stroke();
 
     	// 数据点
-    	ctx.fillStyle = '#32bbff';
+    	ctx.fillStyle = '#ff4422';
     	for(var i=0; i<step; i++){
     		var rad  = (2 * Math.PI / step) * i;
     		var rate = cfg.data[i][1] * per;

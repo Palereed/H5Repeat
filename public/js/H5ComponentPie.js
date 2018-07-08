@@ -25,7 +25,7 @@ var H5ComponentPie = function (name, cfg) {
     cns.height =  height;
     component.append(cns);
     var step   = cfg.data.length;
-    var sAngle = 1.5 * Math.PI;  // 起始角度
+    var sAngle = -0.5 * Math.PI;  // 起始角度
     var eAngle = 0;  // 结束角度
     $.each(cfg.data, function(index, item){
         // 扇形
@@ -45,7 +45,7 @@ var H5ComponentPie = function (name, cfg) {
         text.append(per);
         var datax = r +  Math.cos( sAngle ) * r;
         var datay = r +  Math.sin( sAngle ) * r;
-        datax > width/2  ? text.css('left', datax + 20) : text.css('right', width - datax + 20);
+        datax > width/2  ? text.css('left', datax) : text.css('right', width - datax );
         datay > height/2 ? text.css('top', datay)  : text.css('bottom',height- datay);
         
         item[3] && text.css('color',item[3]);
