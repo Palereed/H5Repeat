@@ -3,7 +3,8 @@
   background-size:cover !important;
   box-sizing:border-box;
   font-family: "Microsoft Jhenghei";
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+  font-size:0.16rem}
 
 html {
   font-size: calc(100vw/3.75);
@@ -87,57 +88,18 @@ html {
 	75%{transform:translateY(20px)}
 }
 
-.h5_component_control_cat_mouth{
+.h5_component_control_tail_eyes{
 	animation:shake 2s infinite 2s
 }
-
-.h5_component_control_tail_fly{
-	animation:fly 4s infinite 2s
+.h5_component_control_tail_ball{
+	animation:fly 4s infinite 2s;
+	font-size:0.16rem;
+	text-align:center;
+	padding-top:1.18rem;
 }
 .h5_page_tail .h5_component_control_footer{
 	display:none;
 } 
-/* 柱图样式 */
-.h5_component_bar .line{
-	width:100%;
-	font-size:0.14rem;
-	position:relative;
-}
-.h5_component_bar .name{
-	width:70px;
-	position:absolute;
-	left:-70px;
-}
-.h5_component_bar .rate{
-	height:16px;
-	position:absolute;
-}
-.h5_component_bar .rate .bg{
-	background:#99c0ff;
-	height:100%;
-	width:0;
-	position:absolute;
-	left: 0;
-	border-radius:2px;
-}
-.h5_component_bar .per{
-	position:absolute;
-	right:-40px;
-	width:40px;
-	text-align:right;
-	opacity:0
-}
-.h5_component_bar_load .rate .bg{
-    -webkit-transition: all 1s 1s;
-    width:100%;
-}
-.h5_component_bar_load .per{
-    -webkit-transition: all 1s 2s;
-    opacity:1;
-}
-.h5_component_bar_leave .per{
-    opacity:0;
-}
 
 /* 垂直柱图样式 */
 .h5_component_bar_v .line{
@@ -260,6 +222,48 @@ html {
 	font-size:0.12rem;
 }
 
+/* 柱图样式 */
+.h5_component_bar .line{
+	width:100%;
+	font-size:0.14rem;
+	position:relative;
+}
+.h5_component_bar .name{
+	width:70px;
+	position:absolute;
+	left:-70px;
+}
+.h5_component_bar .rate{
+	height:16px;
+	position:absolute;
+}
+.h5_component_bar .rate .bg{
+	background:#99c0ff;
+	height:100%;
+	width:0;
+	position:absolute;
+	left: 0;
+	border-radius:2px;
+}
+.h5_component_bar .per{
+	position:absolute;
+	right:-40px;
+	width:40px;
+	text-align:right;
+	opacity:0
+}
+.h5_component_bar_load .rate .bg{
+    -webkit-transition: all 1s 1s;
+    width:100%;
+}
+.h5_component_bar_load .per{
+    -webkit-transition: all 1s 2s;
+    opacity:1;
+}
+.h5_component_bar_leave .per{
+    opacity:0;
+}
+
 /* 散点图样式 */
 .h5_component_point .point{
 	display:block;
@@ -298,14 +302,24 @@ html {
 }
 
 /* loading */
+.load-wrapper{
+	position:absolute;
+	width:100%;
+	height:0.8rem;
+	top:50%;
+	margin-top:-0.4rem;
+  text-align:center;}
+.load-wrapper > .rate{height:0.3rem;line-height:0.3rem}
+.load-wrapper > .loading{height:0.5rem;}
+.loading {font-size:0;}
 .loading > div {
 	background-color: #aaa;
-	width: 4px;
-	height: 35px;
-	border-radius: 2px;
-	margin: 2px;
+	width: 0.04rem;
+	height: 0.5rem;
+	border-radius: 0.02rem;
+	margin:0 0.05rem;
 	display: inline-block;
-    animation: load 0.9s  infinite cubic-bezier(.85, .25, .37, .85); 
+  animation: load 0.9s  infinite cubic-bezier(.85, .25, .37, .85); 
 }
 .loading > div:nth-child(2), 
 .loading > div:nth-child(4) 

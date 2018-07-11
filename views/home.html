@@ -9,6 +9,7 @@
 	<script src="public/js/jquery.js"></script>
 	<script src="public/js/jquery-ui.min.js"></script>
 	<script src="public/js/jquery.fullPage.js"></script>
+  <script src="public/js/H5Loading.js"></script>
 	<script type="text/javascript">
 		var res = ['Base','Point','Bar','Bar_v','Polyline','Rader','Pie','Ring'];
 		var html = [];
@@ -22,14 +23,17 @@
 	<script src="public/js/H5.js"></script>
 </head>
 <body>
-  <!-- <div class="loading">
-	  <div></div>
-	  <div></div>
-	  <div></div>
-	  <div></div>
-	  <div></div>
-  </div>  -->
-	<!-- 主要逻辑 -->
+  <div class="load-wrapper">
+    <div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div> 
+  <div class="rate" id="rate">0%</div>
+  </div>
+  <!-- 主要逻辑 -->
   <script type="text/javascript">
   $(function (){
     var h5 = new H5();
@@ -547,7 +551,7 @@
           },
           dealy:1000
         })
-  	    .addComponent('tail_eyes',{
+        .addComponent('tail_eyes',{
   	    	bg:'public/images/eyes.png',
   	    	width:"2rem",
           height:"0.67rem",
@@ -565,46 +569,80 @@
           	opacity:0 
           },
   	    })
-        .addComponent('cat_mouth',{
-          bg:'public/images/cat_mouth.png',
+        .addComponent('tail_ball',{
+          bg:'public/images/tail_ball.png',
           width:"2rem",
-          height:"0.89rem",
+          height:"2rem",
           center:true,
+          text:"谢谢观看",
           css:{
-            top:"3rem",
-            opacity:0
+            top:"0",
+            opacity:0,
           },
           animateIn:{ 
-            top:"1.8rem",
+            top:"1.6rem",
             opacity:1 
           },
-          animateOut:{
-            top:"3rem", 
+          animateOut:{ 
+            top:"0",
             opacity:0 
           },
         })
-  	    .addComponent('tail_fly',{
-  	    	bg:'public/images/fly.png',
-  	    	width:"1.5rem",
+        .addComponent('left_cat',{
+          bg:'public/images/left_cat.png',
+          width:"1.5rem",
           height:"1.5rem",
           css:{
-          	bottom:0,
-            right:"-0.2rem",
-          	opacity:0
+            bottom:"1rem", 
+            left:"-0.7rem",
+            opacity:0
           },
           animateIn:{ 
-          	bottom:"1rem", 
-            right:"0.1rem",
-          	opacity:1 
+            left:"-0.51rem",
+            opacity:1 
           },
           animateOut:{ 
-          	bottom:0,
-            right:"-0.2rem",
-          	opacity:0 
+            left:"-0.7rem",
+            opacity:0 
           },
           delay:500
-  	    })
-  	  .loader(1);     
+        })
+        .addComponent('right_cat',{
+          bg:'public/images/right_cat.png',
+          width:"1.5rem",
+          height:"1.5rem",
+          css:{
+            bottom:"1rem", 
+            right:"-0.45rem",
+            opacity:0
+          },
+          animateIn:{ 
+            right:"-0.05rem",
+            opacity:1 
+          },
+          animateOut:{ 
+            right:"-0.45rem",
+            opacity:0 
+          },
+          delay:500
+        })
+  	  .loader([
+        'public/images/bg.jpg',
+        'public/images/down_logo.png',
+        'public/images/eyes.png',
+        'public/images/face.jpg',
+        'public/images/face_title.png',
+        'public/images/face_top.png',
+        'public/images/face_bottom.png',
+        'public/images/left_cat.png',
+        'public/images/navbg.png',
+        'public/images/people.png',
+        'public/images/right_cat.png',
+        'public/images/tail_back.png',
+        'public/images/tail_ball.png',
+        'public/images/talk_bg1.png',
+        'public/images/talk_bg2.png',
+        'public/images/talk_bg3.png']);     
     })
   </script>
 </body>

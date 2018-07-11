@@ -1,6 +1,7 @@
 // 内容组织类
 var H5 = function (){
-    this.el = $('<div class="h5">').hide(); //hide()以备加载
+    this.id = ('h5_' + Math.random()).replace('.','_');
+    this.el = $(`<div class="h5" id=${this.id}>`).hide();
     this.page = [];
 	  $('body').append(this.el);
 	  // 新增页面
@@ -61,20 +62,21 @@ var H5 = function (){
      	return this;
       }
     this.loader = function ( firstPage ){
-     	  this.el.fullpage({
-     	  	onLeave:function (index, nextIndex, direction){
-     	  	 	$(this).find('.h5_component').trigger('onLeave');
-     	  	  },
-     	  	afterLoad:function (anchorLink, index){
-     	  	 	$(this).find('.h5_component').trigger('onLoad');
-     	  	  }
-     	  });
-     	  this.page[0].find('.h5_component').trigger('onLoad');
-        this.el.show();
-        // $.fn
-        if( firstPage ){
-           $.fn.fullpage.moveTo( firstPage );
+ 	  this.el.fullpage({
+        onLeave:function (index, nextIndex, direction){
+            $(this).find('.h5_component').trigger('onLeave');
+        },
+        afterLoad:function (anchorLink, index){
+            $(this).find('.h5_component').trigger('onLoad');
         }
+      });
+      this.page[0].find('.h5_component').trigger('onLoad');
+      this.el.show();
+      // $.fn
+      if( firstPage ){
+        $.fn.fullpage.moveTo( firstPage );
+      }
      }
+     this.loader = typeof H5_loading == "function" ? H5_loading : this.loader
      return this;
 	}
