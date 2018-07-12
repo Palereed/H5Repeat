@@ -8,7 +8,7 @@
 4. rem做移动端适配，不同分辨率手机均有不错效果。
 
 ## 项目运行
-```
+```javascript
 //下载后
 npm install
 node reed.js
