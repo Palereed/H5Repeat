@@ -23,11 +23,11 @@ ip:3000
 ```
 
 ## 效果图
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/1.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/2.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/3.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/4.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/5.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/6.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/7.JPG)
-![Alt text](https://github.com/Palereed/H5Report/blob/master/introduction/8.JPG)
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/1.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/2.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/3.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/4.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/5.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/6.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/7.JPG" >
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/8.JPG" >
