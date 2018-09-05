@@ -5,12 +5,12 @@ var app = express();
 
 app.use('/public', express.static('public'));
 
-app.set('views','./views');
-app.set('view engine','html');
+app.set('views', './views');
+app.set('view engine', 'html');
 app.engine('html', swig.renderFile);
 
-app.get('/',function(req, res){
-    res.render('home',{ })
+app.get('/', function (req, res) {
+	res.render('home', {})
 })
 
 module.exports = app.listen(3000, function (err) {
@@ -18,5 +18,5 @@ module.exports = app.listen(3000, function (err) {
 		console.log(err);
 		return
 	}
-	console.log('成功')
+	console.log('run success')
 });

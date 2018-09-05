@@ -1,4 +1,4 @@
-# H5Report
+# h5-report
 一个移动端H5页面，个人简介。
 
 ## 介绍
@@ -9,27 +9,20 @@
 
 ## 项目运行
 ```javascript
-//下载后
 npm install
+
 node reed.js
 
-//浏览器中
 localhost:3000
-
-//于手机端查看
-//电脑连接wifi运行，手机浏览器中输入
-ip:3000
-//ip为电脑ip
 ```
 
 ## 效果图
 
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/1.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/2.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/3.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/4.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/5.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/6.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/7.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/introduction/8.JPG"></img>  
-
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/1.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/2.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/3.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/4.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/5.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/6.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/7.JPG"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/8.JPG"></img>  
