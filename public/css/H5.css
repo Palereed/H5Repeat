@@ -5,11 +5,7 @@
 	box-sizing: border-box;
 	font-family: "Microsoft Jhenghei";
 	background-repeat: no-repeat;
-	font-size: 0.16rem
-}
-
-html {
-	font-size: calc(100vw/3.75);
+	font-size: 0.32rem
 }
 
 .h5_component {
@@ -35,7 +31,7 @@ html {
 }
 
 .h5_component_control_face_top {
-	animation: balloon 4s infinite
+	animation: balloon 1.5s infinite alternate
 }
 
 @-webkit-keyframes shake {
@@ -77,32 +73,11 @@ html {
 }
 
 @-webkit-keyframes balloon {
-	0% {
+	from {
 		transform: translateY(0px)
 	}
-
-	17% {
-		transform: translateY(-16px)
-	}
-
-	34% {
-		transform: translateY(-8px)
-	}
-
-	51% {
-		transform: translateY(0px)
-	}
-
-	68% {
-		transform: translateY(-16px)
-	}
-
-	85% {
-		transform: translateY(-8px)
-	}
-
-	100% {
-		transform: translateY(0px)
+	to {
+		transform: translateY(-0.5rem)
 	}
 }
 
@@ -129,22 +104,22 @@ html {
 .h5_component_control_nav_blue,
 .h5_component_control_nav_yellow {
 	background: url('../images/navbg.png');
-	width: 200px;
-	height: 62px;
+	width: 4rem;
+	height: 1.24rem;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	line-height: 70px;
+	line-height: 1.4rem;
 	text-align: center;
-	font-size: 0.16rem;
+	font-size: 0.32rem;
 	color: #757575;
 }
 
 .h5_component_control_nav_blue {
-	background-position: 0 -71px;
+	background-position: 0 -1.42rem;
 }
 
 .h5_component_control_nav_yellow {
-	background-position: 0 -142px;
+	background-position: 0 -2.84rem;
 }
 
 /* 结束页 */
@@ -186,9 +161,9 @@ html {
 
 .h5_component_control_tail_ball {
 	animation: fly 4s infinite 2s;
-	font-size: 0.16rem;
+	font-size: 0.32rem;
 	text-align: center;
-	padding-top: 1.18rem;
+	padding-top: 2.36rem;
 }
 
 .h5_page_tail .h5_component_control_footer {
@@ -198,7 +173,7 @@ html {
 /* 垂直柱图样式 */
 .h5_component_bar_v .line {
 	height: 100%;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 	line-height: 15px;
 	position: relative;
 	float: left;
@@ -262,7 +237,7 @@ html {
 	text-align: center;
 	z-index: 99;
 	transition: 1s;
-	font-size: 0.12rem;
+	font-size: 0.32rem;
 }
 
 /* 折线图 */
@@ -276,7 +251,7 @@ html {
 
 .h5_component_polyline .text {
 	position: absolute;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 	text-align: center;
 	bottom: -20px;
 	line-height: 20px;
@@ -298,7 +273,7 @@ html {
 	text-align: center;
 	opacity: 0;
 	transition: opacity 1s;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 }
 
 /* 环图 */
@@ -324,13 +299,13 @@ html {
 	margin: -20px 0 0 0;
 	z-index: 999;
 	transition: 1s;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 }
 
 /* 柱图样式 */
 .h5_component_bar .line {
 	width: 100%;
-	font-size: 0.14rem;
+	font-size: 0.28rem;
 	position: relative;
 }
 
@@ -393,7 +368,7 @@ html {
 	top: 50%;
 	text-align: center;
 	line-height: 16px;
-	font-size: 0.12rem;
+	font-size: 0.24rem;
 	margin: -16px 0 0 0;
 }
 
@@ -419,19 +394,19 @@ html {
 .load-wrapper {
 	position: absolute;
 	width: 100%;
-	height: 0.8rem;
+	height: 1.6rem;
 	top: 50%;
-	margin-top: -0.4rem;
+	margin-top: -0.8rem;
 	text-align: center;
 }
 
 .load-wrapper>.rate {
-	height: 0.3rem;
-	line-height: 0.3rem
+	height: 0.6rem;
+	line-height: 0.6rem
 }
 
 .load-wrapper>.loading {
-	height: 0.5rem;
+	height: 1rem;
 }
 
 .loading {
@@ -440,10 +415,10 @@ html {
 
 .loading>div {
 	background-color: #aaa;
-	width: 0.04rem;
-	height: 0.5rem;
-	border-radius: 0.02rem;
-	margin: 0 0.05rem;
+	width: 0.08rem;
+	height: 1rem;
+	border-radius: 0.04rem;
+	margin: 0 0.1rem;
 	display: inline-block;
 	animation: load 0.9s infinite cubic-bezier(.85, .25, .37, .85);
 }

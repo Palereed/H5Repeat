@@ -18,11 +18,11 @@ localhost:3000
 
 ## 效果图
 
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/1.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/2.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/3.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/4.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/5.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/6.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/7.JPG"></img>
-<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/8.JPG"></img>  
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/1.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/2.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/3.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/4.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/5.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/6.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/7.jpg"></img>
+<img width='170' height='300' src="https://github.com/Palereed/H5Report/blob/master/public/rundemo/8.jpg"></img>  
